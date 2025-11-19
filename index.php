@@ -87,6 +87,9 @@ function showPixelRatio() {
         <a href="https://validator.w3.org/check?uri=referer">HTML5</a> &amp; 
         <a href="https://jigsaw.w3.org/css-validator/check/referer">CSS3</a> • 
         <span class="blue">ip.ptm.ro</span> • 2014 - <?php echo date("Y"); ?> © All rights reserved
+        <br>Privacy Notice: This site displays basic technical information such as your IP address,
+        browser details, and system data for security, diagnostics, and statistics.
+        <br>No data is sold or shared beyond standard server logs.
     </footer>
 </body>
 </html>
