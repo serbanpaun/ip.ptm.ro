@@ -1,0 +1,102 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { font-size: 16px; }
+
+body {
+    background: #0c0f14;
+    color: #e6e6e6;
+    font-family: "Noto Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 30px;
+    white-space: nowrap;
+}
+
+.yellow { color: #ffd648; }
+.blue { color: #4da6ff; font-weight: 600; }
+.red { color: #ff5c5c; font-weight: 600; }
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 700px;
+}
+
+td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #2a2f38;
+    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+    text-align: left;
+}
+
+td:first-child { width: 35%; color: #87bfff; font-weight: 600; }
+
+button {
+    background: #1b1f27;
+    border: 1px solid #333a47;
+    color: #e6e6e6;
+    padding: 6px 10px;
+    margin-left: 10px;
+    cursor: grab;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background: #242a35;
+    border-color: #4da6ff;
+}
+
+footer {
+    margin-top: 40px;
+    font-size: clamp(0.8rem, 1.2vw, 1rem);
+    white-space: nowrap;
+    text-align: center;
+    opacity: 0.8;
+}
+
+footer a { color: #4da6ff; text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+
+@media (max-width: 600px) {
+    h1 { font-size: clamp(1.5rem, 6vw, 2rem); }
+    td { font-size: clamp(0.8rem, 2vw, 1rem); }
+    td:first-child { width: 100%; }
+    footer { font-size: clamp(0.7rem, 2vw, 0.9rem); }
+}
+
+.copy-message {
+    display: none;
+    position: fixed;
+    top: 0;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: deepskyblue;
+    color: #232323;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.copy-message.show {
+    display: block;
+    opacity: 1;
+}
