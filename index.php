@@ -2,7 +2,8 @@
 require_once __DIR__ . '/vendor/autoload.php';
 use GeoIp2\Database\Reader;
 
-$ip_address = $_SERVER['REMOTE_ADDR'] ?? 'Unknown';
+$ip_address = filter_var($_SERVER['REMOTE_ADDR'] ?? '', FILTER_VALIDATE_IP)
+    ?: 'Unknown';
 $browser = htmlspecialchars($_SERVER['HTTP_USER_AGENT'] ?? 'Unknown', ENT_QUOTES, 'UTF-8');
 $remote_port = intval($_SERVER['REMOTE_PORT'] ?? 0);
 
