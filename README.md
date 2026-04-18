@@ -9,6 +9,8 @@ Script to show user's IP Address and other public details which the browser send
 # composer init
 # composer require geoip2/geoip2
 ```
+Install [this package]([url](https://github.com/maxmind/geoipupdate)): `geoipupdate` on your server.
+
 ## Published details
 ### IP Address  
 Your publicly visible IP Address
