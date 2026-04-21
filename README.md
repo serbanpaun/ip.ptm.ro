@@ -5,9 +5,12 @@ Script to show user's IP Address and other public details which the browser send
 
 ```
 # apt install composer
-# cd /path/to/your/webserver/directory/
-# composer init
-# composer require geoip2/geoip2
+# cd /path/to/your/website/directory/
+```
+Download ```GeoLite2-Country.mmdb``` from  https://www.maxmind.com/ (you need an account).
+```
+# curl -sS https://getcomposer.org/installer | php
+# php composer.phar require geoip2/geoip2
 ```
 Install [this package](https://github.com/maxmind/geoipupdate): `geoipupdate` on your server.
 
